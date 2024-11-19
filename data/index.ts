@@ -3,8 +3,8 @@ import { link } from "fs";
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  {name: "Services", link: "#services" },
-  {name:"team", link: "#team"},
+  { name: "Team", link: "#team" },
+  { name: "Services", link: "#services" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -62,7 +62,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title:
+      "Do you want to start a project together with us? Contact us at any time.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -167,7 +168,6 @@ export const companies = [
   },
 ];
 
-
 export const workExperience = [
   {
     id: 1,
@@ -205,35 +205,8 @@ export const teamMembers = [
     name: "Mohsin Mukhtiyar",
     role: "Frontend Developer",
     img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-   {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-   {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
     github: "#",
     twitter: "#",
@@ -247,7 +220,8 @@ export const teamMembers = [
     name: "Mohsin Mukhtiyar",
     role: "Frontend Developer",
     img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
     github: "#",
     twitter: "#",
@@ -256,12 +230,13 @@ export const teamMembers = [
       { icon: "/react.svg", name: "React" },
     ],
   },
-   {
+  {
     id: 1,
     name: "Mohsin Mukhtiyar",
     role: "Frontend Developer",
     img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
     github: "#",
     twitter: "#",
@@ -270,12 +245,43 @@ export const teamMembers = [
       { icon: "/react.svg", name: "React" },
     ],
   },
-   {
+  {
     id: 1,
     name: "Mohsin Mukhtiyar",
     role: "Frontend Developer",
     img: "/mohsinn.jpeg", // Ensure this path is correct
-    description: "Lorem sed do re et dolore magna aliqua.",
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
+    github: "#",
+    twitter: "#",
+    skills: [
+      { icon: "/py.svg", name: "Python" },
+      { icon: "/react.svg", name: "React" },
+    ],
+  },
+  {
+    id: 1,
+    name: "Mohsin Mukhtiyar",
+    role: "Frontend Developer",
+    img: "/mohsinn.jpeg", // Ensure this path is correct
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
+    github: "#",
+    twitter: "#",
+    skills: [
+      { icon: "/py.svg", name: "Python" },
+      { icon: "/react.svg", name: "React" },
+    ],
+  },
+  {
+    id: 1,
+    name: "Mohsin Mukhtiyar",
+    role: "Frontend Developer",
+    img: "/mohsinn.jpeg", // Ensure this path is correct
+    description:
+      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
     github: "#",
     twitter: "#",
@@ -286,23 +292,20 @@ export const teamMembers = [
   },
 ];
 
-
-
-
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: ""
+    link: "",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link: ""
+    link: "",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/company/secureout/"
+    link: "https://www.linkedin.com/company/secureout/",
   },
 ];
