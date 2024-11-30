@@ -77,34 +77,34 @@ export const projects = [
   {
     id: 1,
     title: "Net Guard (Ongoing)",
-    des: "A open-source next level SIEM Security Solution, that has capabilities to replace Open-Source SIEMS, like Wazuh etc.",
+    des: "An open-source next-level SIEM Security Solution, with capabilities to replace Open-Source SIEMs like Wazuh.",
     img: "/netguard.svg",
     iconLists: ["/py.svg", "/c-1.svg", "/asm.svg", "/go.svg", "/shell.svg"],
-    link: "github.com/president-xd/Net-Guard",
+    link: "https://github.com/president-xd/Net-Guard", // Added `https://`
   },
   {
     id: 2,
     title: "Spamy",
-    des: "A master Gmail Filtering tool, that has capabilites to analyze email headers, links, attachments, its sources and may more.",
+    des: "A master Gmail filtering tool, capable of analyzing email headers, links, attachments, and their sources.",
     img: "/spamy.svg",
     iconLists: ["/py.svg"],
-    link: "/github.com/president-xd/Spamy",
+    link: "https://github.com/president-xd/Spamy", // Added `https://`
   },
   {
     id: 3,
     title: "xNIDDY",
-    des: "A python-based Network Intrusion Detection system, specifically focused on capturing and detecting TCP, UDP, and ICMP packets and there respected attacks on deeper level.",
+    des: "A Python-based Network Intrusion Detection System, focused on TCP, UDP, and ICMP packet detection and analysis.",
     img: "/xniddyy.svg",
     iconLists: ["/py.svg"],
-    link: "github.com/president-xd/xNIDDY",
+    link: "https://github.com/president-xd/xNIDDY", // Added `https://`
   },
   {
     id: 4,
     title: "Cryptix",
-    des: "A python package/library used for encrypting and decryption a vast level of Cryptographic algorithms",
+    des: "A Python package/library for encryption and decryption using a wide range of cryptographic algorithms.",
     img: "/xniddy.svg",
     iconLists: ["/py.svg"],
-    link: "github.com/president-xd/Cryptix",
+    link: "https://github.com/president-xd/Cryptix", // Added `https://`
   },
 ];
 
@@ -171,31 +171,45 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Co-founder - SecureOUT",
-    desc: "As a Co-founder of a Cyber Security Company, you shape the organization's vision, develop advanced security solutions, and drive strategic growth. You collaborate with stakeholders to design innovative products, oversee R&D, and ensure the deployment of cutting-edge technologies. Additionally, you lead business development, secure funding, and build the company's industry reputation while fostering a culture of security awareness.",
+    title: "Network Security Solutions",
+    desc: "Our expertise in network security includes advanced Intrusion Detection Systems (IDS), Firewall Management, and Network Traffic Analysis. We design and deploy robust defenses to safeguard network infrastructures from unauthorized access and cyber threats, ensuring secure operations for our clients.",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/nmap.svg",
   },
   {
     id: 2,
-    title: "Network Security Researcher - NCCS, Pakistan",
-    desc: "As a Network Security Researcher specializing in Network Intrusion Detection Systems (NIDS), you focus on developing and refining techniques to detect and prevent unauthorized network access. You work on creating advanced detection methods, analyzing network traffic for potential threats, and ensuring robust defenses against evolving cyber attacks. Your role involves researching emerging technologies, improving existing NIDS frameworks, and contributing to the overall security posture of networks.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp1.svg",
+    title: "Red Teaming and Penetration Testing",
+    desc: "Our Red Team specializes in web application and hardware penetration testing. We simulate real-world cyberattacks to identify vulnerabilities, assess security controls, and provide actionable insights to fortify defenses. This service ensures organizations are prepared against evolving cyber threats.",
+    className: "md:col-span-2",
+    thumbnail: "/Burpsuit.svg",
   },
   {
     id: 3,
-    title: "Red Teamer - TrilliumInfoSec",
-    desc: "As a Red Teamer specializing in web penetration testing, you focus on simulating cyber attacks to identify vulnerabilities in web applications. Your role involves conducting comprehensive security assessments, exploiting weaknesses to test defenses, and providing detailed reports with recommendations for improving security. You stay up-to-date with the latest attack techniques and tools to ensure robust protection against potential threats.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp4.svg",
+    title: "Malware Analysis and Threat Intelligence",
+    desc: "We offer in-depth malware analysis services to identify and neutralize malicious software targeting your systems. Our team specializes in reverse engineering, threat hunting, and providing actionable intelligence to strengthen defenses against sophisticated attacks.",
+    className: "md:col-span-2",
+    thumbnail: "/netguard.svg",
   },
   {
     id: 4,
-    title: "Self Employed",
-    desc: "As a self-employed professional, you manage your own business operations, providing specialized services in your field of expertise. You are responsible for client acquisition, project execution, and maintaining high standards of work. You handle all aspects of your business, including marketing, financial management, and client relationships, ensuring that you deliver quality outcomes while navigating the challenges of independent work.",
+    title: "Web and Software Security",
+    desc: "We offer end-to-end web and software security services, focusing on vulnerability assessments, secure application development, and patch management. By identifying potential risks early, we help clients build resilient software and web systems that stand up to modern threats.",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/cloud.svg",
+  },
+  {
+    id: 5,
+    title: "Hardware Security",
+    desc: "Our team delivers expert hardware security solutions, including vulnerability assessments for hardware systems and securing IoT devices. By ensuring robust protection of physical assets, we mitigate risks in increasingly connected environments.",
+    className: "md:col-span-2",
+    thumbnail: "/app.svg",
+  },
+  {
+    id: 6,
+    title: "Custom Cybersecurity Training",
+    desc: "We provide customized cybersecurity training programs for organizations to foster a culture of security awareness. These programs include hands-on workshops on ethical hacking, penetration testing, and best practices for mitigating cyber risks.",
+    className: "md:col-span-2",
+    thumbnail: "/host.svg",
   },
 ];
 
@@ -203,20 +217,83 @@ export const teamMembers = [
   {
     id: 1,
     name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
+    role: "Network Security Specialist",
     img: "/mohsinn.jpeg", // Ensure this path is correct
     description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
+      "Network security specialist with expertise in securing systems, monitoring threats, and implementing robust cybersecurity measures.",
     linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
+    github: "#", // Add the GitHub link if applicable
+    twitter: "#", // Add the Twitter link if applicable
     skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
+      // { icon: "/security.svg", name: "Network Security" },
+      // { icon: "/firewall.svg", name: "Firewall Management" },
+      // { icon: "/linux.svg", name: "Linux Security" },
     ],
   },
   {
-    id: 1,
+    id: 2,
+    name: "Khizar Ali Shah",
+    role: "Hardware Penetration Tester",
+    img: "/khizar.jpg", // Ensure this path is correct
+    description:
+      "Hardware penetration tester with expertise in identifying vulnerabilities in hardware systems and ensuring robust security measures.",
+    linkedin: "https://www.linkedin.com/in/khizar-ali-shah-410214233",
+    github: "https://github.com/eros938",
+    twitter: "#", // Add the Twitter link if applicable
+    skills: [
+      // { icon: "/hardware.svg", name: "Hardware Security" },
+      // { icon: "/pentest.svg", name: "Penetration Testing" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Abdul Wahab Khan",
+    role: "Hardware & Network Security",
+    img: "/wahab.jpg", // Ensure this path is correct
+    description:
+      "Enthusiast in hardware and network security with a strong foundation in programming and securing critical systems.",
+    linkedin: "https://www.linkedin.com/in/abdul-wahab-khan-312069270/",
+    github: "#", // Add the GitHub link if applicable
+    twitter: "#", // Add the Twitter link if applicable
+    skills: [
+      // { icon: "/hardware.svg", name: "Hardware Security" },
+      // { icon: "/network.svg", name: "Network Security" },
+      // { icon: "/programming.svg", name: "Programming" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Mudasir Shah",
+    role: "Web Dev and Pentester",
+    img: "/mudasirshah.jpeg", // Ensure this path is correct
+    description:
+      "Web Dev and Pentester with expertise in Node.js, Express, and web security. Creating secure applications and identifying vulnerabilities.",
+    linkedin: "https://www.linkedin.com/in/mudasir-shah-1b6400279/",
+    github: "https://github.com/el-noir",
+    twitter: "#",
+    skills: [
+      // { icon: "/nodejs.svg", name: "Node.js" },
+      // { icon: "/js.svg", name: "JavaScript" },
+      // Additional skills can be uncommented as needed.
+    ],
+  },
+  {
+    id: 5,
+    name: "Mazhar Saeed",
+    role: "Software & Web Pen-tester",
+    img: "/mazharsaeed.jpg", // Ensure this path is correct
+    description:
+      "Experienced in software testing and web penetration testing, with a focus on identifying and fixing vulnerabilities in applications.",
+    linkedin: "https://www.linkedin.com/in/mazhar-saeed-8414682a7/", // Replace with the correct LinkedIn URL
+    github: "", // Add the GitHub link if applicable
+    twitter: "#", // Add the Twitter link if applicable
+    skills: [
+      // { icon: "/testing.svg", name: "Software Testing" },
+      // { icon: "/pentest.svg", name: "Web Penetration Testing" },
+    ],
+  },
+  {
+    id: 6,
     name: "Mohsin Mukhtiyar",
     role: "Frontend Developer",
     img: "/mohsinn.jpeg", // Ensure this path is correct
@@ -226,68 +303,8 @@ export const teamMembers = [
     github: "#",
     twitter: "#",
     skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-  {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-  {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-  {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
-    ],
-  },
-  {
-    id: 1,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
-    description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
-    github: "#",
-    twitter: "#",
-    skills: [
-      { icon: "/py.svg", name: "Python" },
-      { icon: "/react.svg", name: "React" },
+      // { icon: "/py.svg", name: "Python" },
+      // { icon: "/react.svg", name: "React" },
     ],
   },
 ];
@@ -296,11 +313,6 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
     link: "",
   },
   {

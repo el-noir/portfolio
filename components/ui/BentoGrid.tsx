@@ -51,8 +51,13 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = [
+    "Network Security",
+    "Penetration Testing",
+    ,
+    "Cryptography",
+  ];
+  const rightLists = [, "Malware Analysis", "Hardware", "Threat Hunting"];
 
   const [copied, setCopied] = useState(false);
 
@@ -66,7 +71,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "lasharimohsin19@gmail.com";
+    const text = "secureout@secure.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -89,13 +94,13 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
+          {/* {img && (
             <img
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
-          )}
+          )} */}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
