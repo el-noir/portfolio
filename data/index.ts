@@ -5,7 +5,6 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Team", link: "#team" },
   { name: "Services", link: "#services" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -13,7 +12,8 @@ export const gridItems = [
   {
     id: 1,
     title: "Securing Systems with Strategic Insight",
-    description: "",
+    description:
+      "At SecureOut, we focus on protecting your infrastructure with tailor-made strategies, ensuring long-term security.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -23,7 +23,6 @@ export const gridItems = [
   {
     id: 2,
     title: "Strengthening Security with Sophisticated Strategies",
-    description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -32,8 +31,6 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Improving",
-    description: "Approches and Expertise constantly ",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -42,8 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Enthusiast with good Skills",
-    description: "",
+    title: "Advanced Security Solutions",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -52,8 +48,8 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Currently Developing a Security Tools",
-    description: "Exploring innovative security solutions.",
+    title: "Exploring Innovative Security Solutions",
+
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -62,9 +58,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title:
-      "Do you want to start a project together with us? Contact us at any time.",
-    description: "",
+    title: "Do you want to start a project with us? Contact us anytime.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -76,11 +70,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Net Guard (Ongoing)",
-    des: "An open-source next-level SIEM Security Solution, with capabilities to replace Open-Source SIEMs like Wazuh.",
-    img: "/netguard.svg",
-    iconLists: ["/py.svg", "/c-1.svg", "/asm.svg", "/go.svg", "/shell.svg"],
-    link: "https://github.com/president-xd/Net-Guard", // Added `https://`
+    title: "Website Security Analyzer",
+    des: "A tool designed to analyze the security configuration of a website by checking SSL/TLS setup, Content Security Policy (CSP), and certificate expiration date, providing recommendations for improvement.",
+    img: "/web-sec-scanner.jpg", // Update to the relevant image path
+    iconLists: ["/py.svg"], // Example icons for Python, SSL, and CSP
+    link: "https://github.com/eros938/Web-Security-Scanner", // Added link to the GitHub repo
   },
   {
     id: 2,
@@ -217,7 +211,7 @@ export const teamMembers = [
   {
     id: 1,
     name: "Mohsin Mukhtiyar",
-    role: "Network Security Specialist",
+    role: "Founder",
     img: "/mohsinn.jpeg", // Ensure this path is correct
     description:
       "Network security specialist with expertise in securing systems, monitoring threats, and implementing robust cybersecurity measures.",
@@ -294,17 +288,33 @@ export const teamMembers = [
   },
   {
     id: 6,
-    name: "Mohsin Mukhtiyar",
-    role: "Frontend Developer",
-    img: "/mohsinn.jpeg", // Ensure this path is correct
+    name: "Ali Ijaz",
+    role: "Malware Analyst",
+    img: "/ali.jpg", // Ensure this path is correct
     description:
-      "Lorem sed do re et dolore magna aliqua. lorem sed do re et dolore magna aliqua.",
-    linkedin: "https://www.linkedin.com/in/mohsin-lashari/",
+      "Malware Analyst focused on detecting, analyzing, and mitigating malware threats to enhance system security.",
+    linkedin: "https://www.linkedin.com/in/ali-ijaz-098940228/",
     github: "#",
     twitter: "#",
     skills: [
-      // { icon: "/py.svg", name: "Python" },
-      // { icon: "/react.svg", name: "React" },
+      // { icon: "/security.svg", name: "Malware Analysis" },
+      // { icon: "/security.svg", name: "Cybersecurity" },
+      // { icon: "/network.svg", name: "Network Security" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Qazi Awais Qarni",
+    role: "Social Media Handler",
+    img: "/qazi.jpeg", // Ensure this path is correct
+    description:
+      "Managing and curating engaging social media content for digital presence and brand growth.",
+    linkedin: "https://www.linkedin.com/in/shahid-ali-148b11251/",
+    github: "#",
+    twitter: "#",
+    skills: [
+      // { icon: "/social.svg", name: "Social Media Management" },
+      // { icon: "/content.svg", name: "Content Creation" },
     ],
   },
 ];

@@ -89,7 +89,6 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-import Link from "next/link"; // Import Link from Next.js
 
 const RecentProjects = () => {
   return (
@@ -99,9 +98,13 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <div
+          <a
+            href={item.link} // Use the `link` field for each project
+            target="_blank"
+            rel="noopener noreferrer"
             key={item.id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            style={{ textDecoration: "none" }}
           >
             <PinContainer title="Available on GITHUB" href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -148,19 +151,14 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <Link
-                    href={item.link} // Use Next.js Link component
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex lg:text-xl md:text-xs text-sm text-purple"
-                  >
+                  <span className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Learn More
-                    <FaLocationArrow className="ms-3" color="#CBACF9" />
-                  </Link>
+                  </span>
+                  <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
     </div>

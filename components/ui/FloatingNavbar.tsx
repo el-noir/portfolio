@@ -160,7 +160,7 @@ export const FloatingNav = ({
             onClick={() => handleScroll(navItem.link)}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 cursor-pointer",
-              "text-sm xs:text-base" // Adjusts size based on screen width
+              "text-[12px] xs:text-base" // Adjusts size based on screen width
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
