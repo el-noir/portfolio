@@ -1,4 +1,4 @@
-import { link } from "fs";
+// import { link } from "fs";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -13,7 +13,7 @@ export const gridItems = [
     id: 1,
     title: "Securing Systems with Strategic Insight",
     description:
-      "At SecureOut, we focus on protecting your infrastructure with tailor-made strategies, ensuring long-term security.",
+      "SecureOut is a comprehensive cybersecurity platform designed to protect digital assets from modern threats. It combines advanced encryption, real-time threat detection, and robust user authentication to ensure secure operations for individuals and organizations. With a focus on usability and reliability, SecureOut offers tools like vulnerability scanning and detailed analytics to empower users with actionable insights for safeguarding their systems. Whether you're a developer, business, or security enthusiast, SecureOut provides a seamless and secure experience to protect what matters most.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -49,7 +49,8 @@ export const gridItems = [
   {
     id: 5,
     title: "Exploring Innovative Security Solutions",
-
+    description:
+      "Delving into the future of cybersecurity by designing and implementing innovative security tools and practices. This initiative focuses on addressing emerging threats, enhancing defensive mechanisms, and pushing the boundaries of modern cybersecurity. Through comprehensive research, cutting-edge technology adoption, and collaboration, we aim to provide robust, scalable, and efficient solutions tailored to safeguard digital assets in a rapidly evolving threat landscape.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -70,16 +71,20 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Website Security Analyzer",
-    des: "A tool designed to analyze the security configuration of a website by checking SSL/TLS setup, Content Security Policy (CSP), and certificate expiration date, providing recommendations for improvement.",
-    img: "/web-sec-scanner.jpg", // Update to the relevant image path
+    title: "secureHTTPs",
+    des: "A tool to analyze the security configuration of websites, checking SSL/TLS setup, Content Security Policy (CSP), and certificate expiration, with recommendations for improvements.",
+    details:
+      "secureHTTPs is a comprehensive tool that assesses a website's security by inspecting various components such as SSL/TLS configuration, Content Security Policy (CSP) headers, and the expiration date of SSL certificates. By checking the protocol version, cipher suite, and certificate status, the tool helps identify weaknesses in a website's security setup. It also provides actionable recommendations for enhancing security, ensuring that websites comply with best practices to protect against attacks like man-in-the-middle and cross-site scripting (XSS).",
+    img: "/1.png", // Update to the relevant image path
     iconLists: ["/py.svg"], // Example icons for Python, SSL, and CSP
     link: "https://github.com/eros938/Web-Security-Scanner", // Added link to the GitHub repo
   },
   {
     id: 2,
     title: "Spamy",
-    des: "A master Gmail filtering tool, capable of analyzing email headers, links, attachments, and their sources.",
+    des: "A Gmail filtering tool that analyzes email headers, links, attachments, and sources to detect spam and phishing.",
+    details:
+      "Spamy is an advanced Gmail filtering tool designed to help users automatically detect and block spam and phishing emails. It works by analyzing the email headers, links, attachments, and the sources of incoming emails. The tool checks for common signs of malicious emails, such as suspicious sender addresses, unusual attachment types, and deceptive link behaviors. Spamy helps protect users from phishing attacks, unwanted advertising, and other harmful email-based threats, ensuring safer email communication.",
     img: "/spamy.svg",
     iconLists: ["/py.svg"],
     link: "https://github.com/president-xd/Spamy", // Added `https://`
@@ -87,16 +92,20 @@ export const projects = [
   {
     id: 3,
     title: "xNIDDY",
-    des: "A Python-based Network Intrusion Detection System, focused on TCP, UDP, and ICMP packet detection and analysis.",
+    des: "A Python-based Network Intrusion Detection System (NIDS) that analyzes TCP, UDP, and ICMP packet traffic for potential intrusions.",
+    details:
+      "xNIDDY is a Python-based Network Intrusion Detection System (NIDS) that monitors network traffic in real-time. It analyzes packets from various protocols, including TCP, UDP, and ICMP, to detect suspicious activities and potential intrusions. The system is designed to identify a range of malicious activities, such as Denial of Service (DoS) attacks, unauthorized access attempts, and unusual traffic patterns that could signal an ongoing attack. By providing real-time alerts and in-depth analysis, xNIDDY helps network administrators identify and mitigate security threats before they cause significant damage.",
     img: "/xniddyy.svg",
     iconLists: ["/py.svg"],
     link: "https://github.com/president-xd/xNIDDY", // Added `https://`
   },
   {
     id: 4,
-    title: "Cryptix",
-    des: "A Python package/library for encryption and decryption using a wide range of cryptographic algorithms.",
-    img: "/xniddy.svg",
+    title: "CSP Analyzer",
+    des: "A tool to evaluate and recommend improvements for website Content Security Policy (CSP) headers to strengthen security against attacks.",
+    details:
+      "The CSP Analyzer is a specialized tool that inspects the Content Security Policy (CSP) headers of websites. CSP is a security feature used to prevent a range of attacks, including Cross-Site Scripting (XSS) and data injection attacks. This tool evaluates the effectiveness of a website's CSP and highlights areas where improvements can be made. It checks for missing or incomplete directives and ensures that only trusted content sources are allowed. The CSP Analyzer helps web developers and security professionals strengthen their websites' defense mechanisms by ensuring that CSP headers are configured correctly and securely.",
+    img: "/2.png",
     iconLists: ["/py.svg"],
     link: "https://github.com/president-xd/Cryptix", // Added `https://`
   },
@@ -105,27 +114,21 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Mohsin's expertise in cyber security is both profound and transformative. His strategic insights and hands-on approach have been critical in advancing our institution's security posture. His ability to navigate complex challenges with precision and foresight is a testament to his exceptional skills. Mohsin's contributions to the field are invaluable, making him a respected figure among his peers.",
+      "SecureOUT's expertise in cyber security is both profound and transformative. Their strategic insights and hands-on approach have been critical in advancing our institution's security posture. The team's ability to navigate complex challenges with precision and foresight is a testament to their exceptional skills. SecureOUT's contributions to the field are invaluable, making them a respected entity among peers.",
     name: "Dr Kashif Khifayat",
     title: "Director of National Center for Cyber Security",
   },
   {
     quote:
-      "Mohsin's expertise in cyber security is unmatched. His ability to identify vulnerabilities and implement robust solutions was instrumental in securing our infrastructure. His commitment to staying ahead of emerging threats is truly commendable.",
+      "SecureOUT's expertise in cyber security is unmatched. Their ability to identify vulnerabilities and implement robust solutions was instrumental in securing our infrastructure. Their commitment to staying ahead of emerging threats is truly commendable.",
     name: "Sangeen Khattak",
     title: "Security Researcher at NCCS, Pakistan",
   },
   {
     quote:
-      "Mohsin's passion for cyber security shines through in every project he undertakes. His innovative approach and dedication to safeguarding our digital landscape have set new standards in the industry. Mohsin is not just a consultant; he's a guardian of our most valuable data.",
+      "SecureOUT's passion for cyber security shines through in every project they undertake. Their innovative approach and dedication to safeguarding our digital landscape have set new standards in the industry. SecureOUT is not just a consultancy; they are guardians of our most valuable data.",
     name: "Hilmand Khan",
     title: "CEO at TechBase",
-  },
-  {
-    quote:
-      "Mohsin is a rare talent in the cyber security field. His comprehensive understanding of the latest threats and his ability to design tailored security solutions have been invaluable to our business. His work ethic and unwavering commitment to excellence make him a trusted partner.",
-    name: "Abdul Wahab Khan",
-    title: "CEO at SecureOUT",
   },
 ];
 
@@ -261,7 +264,7 @@ export const teamMembers = [
     role: "Web Dev and Pentester",
     img: "/mudasirshah.jpeg", // Ensure this path is correct
     description:
-      "Web Dev and Pentester with expertise in Node.js, Express, and web security. Creating secure applications and identifying vulnerabilities.",
+      "Web Dev & Pentester skilled in Node.js, Express, and web security, focusing on secure apps and vulnerability identification",
     linkedin: "https://www.linkedin.com/in/mudasir-shah-1b6400279/",
     github: "https://github.com/el-noir",
     twitter: "#",
@@ -323,7 +326,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "",
+    link: "https://github.com/SecureOUT",
   },
   {
     id: 3,
